@@ -5,7 +5,7 @@ public class Libro {
     private String titulo;
     private String autor;
     private int anoPublicacion;
-    private boolean leido; // Initially set to false
+    private boolean leido; 
 
    
     public Libro(String titulo, String autor, int anoPublicacion) {
@@ -15,24 +15,24 @@ public class Libro {
         this.leido = false;
     }
 
-   
+   /*Complejidadtemporal:O(1)Tiempoconstante.*/
     public String mostrarInformacion() {
         return "Título: " + titulo + ", Autor: " + autor + 
                ", Año de publicación: " + anoPublicacion + 
                ", Leído: " + (leido ? "Sí" : "No");
     }
 
-   
+   /**Complejidadtemporal:O(1)Tiempoconstante.*/
     public void marcarLeido() {
         this.leido = true;
     }
 
- 
+     /**Complejidadtemporal:O(1)Tiempoconstante.*/
     public boolean esAntiguo() {
         return (2023 - anoPublicacion) > 50;
     }
 
-  
+     /**Complejidadtemporal:O(1)Tiempoconstante.*/
     public boolean isLeido() {
         return leido;
     }
